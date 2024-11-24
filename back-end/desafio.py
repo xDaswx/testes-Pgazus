@@ -11,6 +11,9 @@ que podem ser consultadas pela interface.
 cada conta tem o id unico, cpf unico que facilita as transações e identificação das contas, em um banco real o usuário não pode criar uma conta com um cpf já existente.
 
 a class Interface é apenas responsável pela logica de interação no banco, essa foi a maneira mais simples que pensei em fazer isso.
+
+cada função dentro das classes é utilizado coisas simples da linguagem python, algumas delas já utilizadas em respostas do desafio em questão.
+
 """
 
 class Banco:
@@ -139,6 +142,7 @@ class Interface:
 
     def interfaceSacar(self):
         print("__Área de Saque__")
+        # o while True é utilizado aqui por conta da logica que estou utilizando em confirma, o loop deve ser quebrado para voltar para o painel do banco pegazus
         while True:
             try:
                 id_conta = int(input("Digite o ID da conta: "))

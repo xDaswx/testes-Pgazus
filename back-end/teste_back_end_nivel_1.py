@@ -108,7 +108,7 @@ lista = [1,2,3,4,5,6]
 
 #6-substitua todos os "joao" da lista por "maria"
 
-lista = ["joao", "ana", "joana","joao", "ricardo", "joao"]
+lista = ["joao", "ana", "joana", "joao", "ricardo", "joao"]
 
 #7-criar um loop while em Python que itera sobre os itens de uma lista e imprime os itens enquanto o valor de uma variável é menor ou igual a 5. Após imprimir cada item, o valor da variável é incrementado em 1
 #explique detalhadamente por que escolheu essa solução e não outra
