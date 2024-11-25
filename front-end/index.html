@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<!-- 
+O html está parcialmente responsivo, a criação dele foi baseada na resolução do meu monitor (1920x1080)
+Percebi que em alguns modelos o logo possui a cor errada e o botão de cadrasto é alterado para "cadastre-se"
+Considerei utilizar apenas uma cor unica na logo e usar "cadrasto" ao inves de "cadastre-se"
+
+Reparei que certos elementos de texto não estão de acordo com os elementos de texto do modelo apresentado. Acredito que 
+seja um problema na implementação da fonte nos navegadores (quando utilizo figma acontece a mesma coisa comigo).
+
+Tirando isso a aplicação ficou responsiva no meu smartphone e que em meu monitor tentei deixar o mais próximo
+possivel do modelo.
+
+Os botões estão animados e outros componentes também. 
+
+Em meus projetos sempre utilizo flex blox mas sempre evito usar muito mas isso me auxilia na parte de deixar o 
+website responsivo
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rastreio Xpress</title>
+        <meta name="description" content="A plataforma de rastreamento mais completa do mercado!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="assets/delivery-car.svg">
+    </head>
+    <body>
+        
+        <header>
+            <div id="logo"><img src="assets/delivery-car.svg" alt=""></div>
+            <div>
+                <a style="color: var(--azul);font-size: 27px;font-weight: 600;">Rastreio Xpress</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre nós</a></li>
+                    <li><a href="#partners">Parceiros</a></li>
+                    <li><a href="#help">Ajuda</a></li>
+                </ul>
+            </nav>
+            <div>
+                <button id="sign-in">Entrar</button>
+                <button>Cadastrar</button>
+            </div>
+
+        </header>
+        
+        <main>
+            <section id="home">
+                <div id="home-tracker">
+                    <div><h1 class="titles">Rastreie seu Pedido!</h1></div>
+                    <div id="tracker-search">
+                        <input type="text" placeholder="Código de rastreamento">
+                        <button id="tracker-button">
+                            <div style="
+                                text-align: center;
+                                height: 20px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            ">
+                            <img src="assets/location.svg" alt="location icon" style="transform: scale(2);filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(175deg) brightness(104%) contrast(99%);">
+                                <span style="font-size: 13px;margin-left: 10px;">RASTREAR</span>
+                            
+                            </div>
+                            
+                            </button>
+                    </div>
+                </div>
+                <div id="home-img" style="max-width: 130vh;">
+                    <img src="assets/boxes.svg" alt="boxes">
+                </div>
+            
+            </section>
+            
+            <section id="about">
+                <div class="header">
+                    <h1 class="titles">Veja com o Rastreio Express pode facilitar sua rotina</h1>
+                    <p style="text-align: center; margin-top: 20px;">As funcionalidades do Rastreio Express foram desenvolvidas para ajudar você a organizar a rotina logística.</p>
+                </div>
+
+                <!--                 
+                    aqui é o grupo div responsável por mostrar as funções que o sistema possui,
+                    aqui a div com o id "list-info", é tratada como o grupo pai das div com classe info
+                -->
+
+                <div id="list-info">
+                    <!-- info div -->
+                    <div class="info">
+                        <img src="assets/search.svg" alt="lookup svg">
+                        <h3>Busque por uma encomenda</h3>
+                        <p>Use o Rastreio Express para encontrar suas encomendas. Basta colar o código de rastreio no campo de buscar e aproveitar.</p>
+                    </div>
+                    
+                    <!-- info div -->
+                    <div class="info">
+                        <img src="assets/phone_loc.svg" alt="lookup svg">
+                        <h3>Acompanhe suas encomendas</h3>
+                        <p>O Rastreio Express foi desenvolvido para facilitar a visualização de suas encomendas. Nada de atualizações misteriosas e difíceis de entender.</p>
+                    </div>
+                    
+                    <!-- info div -->
+                    <div class="info">
+                        <img src="assets/notification_bell.svg" alt="lookup svg">
+                        <h3>Receba notificações</h3>
+                        <p>No Rastreio Express você acompanha tudo o que acontece com a sua encomenda diretamente no seu e-mail.</p>
+                    </div>
+                </div>
+
+                <div class="section-footer">
+                    <h1>O Rastreio Express foi desenvolvido especialmente para quem deseja usar uma ferramenta simples e objetiva, sem enrolação.</h1>
+                    <button>CADASTRE-SE AGORA</button>
+                </div>
+                
+            </section>
+            
+            <section id="partners">
+            <div id="green-content">
+
+
+                <div class="about-xpress">
+                    
+                    <h2>A plataforma de rastreamento mais completa do mercado</h2>
+                    
+                    <div class="content">
+                        <p>O Melhor Rastreio controla todos os envios postados na Azul Cargo Express e Correios.</p>
+                        <p style="margin-top: 20px;">Porém, quem faz os envios com etiquetas geradas na plataforma do Melhor Envio também consegue rastrear encomendas enviadas pela Jadlog, Buslog, Via Brasil e LATAM Cargo.</p>
+                    </div>
+                    
+                    <div id="partners-icons">
+                        <img height="20px" src="assets/jt-logo.png" alt="j&t express icon">
+                        <img height="20px" src="assets/azul-cargo.jpg" alt="azul cargo icon">
+                        <img height="30px" style="filter: invert(1);" src="assets/LOGOBuslog.webp" alt="buslog icon">
+                        <img height="20px" src="assets/correios.png" alt="correios icon">
+                    </div>
+                </div>
+
+                <div id="woman-box-img" style="width: 500px;">
+                    <img class="bounceAnim" src="assets/image_green_background.svg" alt="woman-box" style="width: 100%;">
+                </div>
+            </div>
+            </section>
+
+            
+            <section id="help">
+                
+                <div id="need-help">
+                    <div id="need-help-img">
+                        <img class="bounceAnim" src="assets/need_help.svg" alt="need help icon">
+                    </div>
+                    <div>
+                        <h1>Precisa de ajuda com algum rastreio?</h1>
+                        <p style="margin-top: 20px;">Veja o que fazer em cada um dos casos:</p>
+                    </div>
+                </div>
+
+                <div id="items-slide">
+                    
+                    <div>
+                        <img class="arrow" src="assets/left-arrow.svg" alt="left arrow">
+                    </div>
+                    <!-- item group -->
+                    <div class="item-group">
+                        <div class="slide-item-top">
+                            <img class="rotateAnim" src="assets/hourglass.svg" alt="hourglass icon" style="width: 30px;filter: invert(59%) sepia(72%) saturate(414%) hue-rotate(89deg) brightness(91%) contrast(103%);margin: 20px 0 20px 0;">
+                            <h1>Estou esperando uma encomenda</h1>
+                        </div>
+                        <div class="slide-item-content">
+                            <p>O remetente é a única pessoa que pode resolver problemas relacionados ao rastreio.</p>
+                            <p>Sugerimos que peça para a pessoa responsável pelo envio entrar em contato com a gente seguindo as instruções para lojistas.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- item group -->
+                    <div class="item-group">
+                        <div class="slide-item-top">
+                            <img class="movimentRotateAnim" src="assets/box.svg" alt="box icon" style="width: 30px;filter: invert(59%) sepia(72%) saturate(414%) hue-rotate(89deg) brightness(91%) contrast(103%);margin: 20px 0 20px 0;">
+                            <h1>Enviei um pacote com etiqueta do Melhor Envio</h1>
+                        </div>
+                        <div class="slide-item-content">
+                            <p>É muito fácil encontrar ajuda. Veja só: </p>
+                            <ul>
+                                <li>Entre na sua conta Melhor Envio</li>
+                                <li>Vá até a opção Ajuda</li>
+                                <li>Escolha o assunto que melhor representa sua dúvida e encontre o suporte que precisa</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- item group -->
+                    <div class="item-group">
+                        <div class="slide-item-top">
+                            <img class="movimentRotateAnim" src="assets/ticket.svg" alt="ticket icon" style="width: 30px;filter: invert(59%) sepia(72%) saturate(414%) hue-rotate(89deg) brightness(91%) contrast(103%);margin: 20px 0 20px 0;">
+                            <h1>Comprei uma etiqueta diretamente com a transportadora</h1>
+                        </div>
+                        <div class="slide-item-content">
+                            <p>Sugerimos que entre em contato com a empresa responsável pelo envio</p>
+                        </div>
+                    </div>
+                    
+                    <!-- item group -->
+                    <div class="item-group">
+                        <div class="slide-item-top">
+                            <img class="movimentRotateAnim" src="assets/cash.svg" alt="cash icon" style="width: 30px;filter: invert(59%) sepia(72%) saturate(414%) hue-rotate(89deg) brightness(91%) contrast(103%);margin: 20px 0 20px 0;">
+                            <h1>Eu vou pagar alguma taxa de uso ou mensalidade?</h1>
+                        </div>
+                        <div class="slide-item-content">
+                            <p>Não! O Melhor Rastreio é totalmente gratuito e não cobra nenhuma mensalidade ou taxa pelos serviços.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="arrow" src="assets/right-arrow.svg" alt="right arrow">
+                    </div>
+                
+                </div>
+
+            </section>
+        </main>
+
+</body>
+
+</html>

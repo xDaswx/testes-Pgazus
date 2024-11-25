@@ -1,0 +1,532 @@
+/* monitor (1920x1080) */
+
+/* no css o :root é utilizado para armazenar informações para então depois serem consultadas com o var(), mesma ideia de variáveis.*/
+:root {
+    --verdeEscuro: #1a9047;
+    --azul: #004aad; 
+    --verde: #2bc866;
+    --paragrafo: #635d69;
+    --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --transitionFast: 0.4s;
+}
+
+/* reset de margens e padding*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* scroll-behavior: smooth; cria uma suavidade em transição do scroll para outro elemento da página*/
+html {
+    scroll-behavior: smooth;
+    font-family: var(--font);
+}
+
+/* para titulos que possuem a cor em questão e que deve utilizar a font helvetica */
+h1, h3 {
+    color: var(--verde);
+}
+
+/* é para um padrão de cor, não acho legal que textos sejam completamentes pretos, então sempre uso mais um cinza*/
+body {
+    color: var(--paragrafo);
+}
+
+/* sticky e o top: 0 mantem a header presa no topo da tela, o z-index indica em qual camada o tal elemento deve ficar */
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid hsl(217.5deg 10.81% 85.49%);
+    z-index: 1;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    text-align: center;
+}
+
+header nav {
+    flex: 3;
+}
+
+/* cria um espaçamento de 20 em cada elemento a da lista e deixa em formato de linha (row) por ser flex box*/
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--azul);
+    font-size: 24px;
+    font-weight: 600;
+}
+header ul li a:hover {
+    animation: color-transition 0.6s both;
+}
+
+/* --------- */
+/* ajustes para o logo da página, esses ajustes é por conta que o o height de delivery-car está incorreto, então aqui estou usando um hack css */
+#logo {
+    width: 90px;
+    height: 50px;
+    overflow: hidden;
+}
+
+#logo img {
+    width: 100%;
+    transform: translate(0px, -22px);
+}
+
+/* --------- */
+
+/* tamanho padrão para os titulos*/
+.titles {
+    font-size: 52px;
+}
+
+button#sign-in {
+    width: 120px;
+    margin-right: 25px;
+    color: var(--verde);
+    background-color: transparent;
+    border: 1px solid var(--verdeEscuro);
+}
+
+
+/* transition faz o elemento voltar ao estado inicial */
+.info img, #partners-icons img {
+    translate: 0;
+    transition: transform var(--transitionFast);
+}
+.info img:hover, #partners-icons img:hover {
+    cursor: pointer;
+    transform: translate(0px, -5px);
+}
+
+/* estilo global de botões para a página */
+button {
+    border-radius: 20px;
+    border: none;
+    height: 52px;
+    translate: 0;
+    transition: transform var(--transitionFast);
+}
+
+/* se o cursor estiver em cima do mouse o eixo Y do elemento é alterado */
+button:hover {
+    cursor: pointer;
+    transform: translate(0px, -2px);
+}
+
+header button {
+    width: 190px;
+    background: var(--verdeEscuro);
+    font-size: 27px;
+    color: white;
+}
+
+input::placeholder {
+    font-weight: 600;
+}
+
+div#tracker-search {
+    margin-top: 60px;
+}
+
+#tracker-search input {
+    width: 520px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0.1rem solid #d6d9e3;
+    text-indent: 17px;
+}
+
+#tracker-search button {
+    height: 50px;
+    width: 140px;
+    background-color: #697882;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+}
+
+
+/* setei comportamento padrão para section, deixei o min-height: 93vh; pois o viewport se encaixou perfeitamente no meu monitor*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 93vh;
+    justify-content: space-between;
+}
+
+div#home-tracker {
+    margin-top: 55px;
+    width: 665px;
+}
+
+div#home-tracker h1 {
+    color: #2bc866;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#home-img img {
+    height: 460px;
+    width: 100%;
+}
+
+#about .header p {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 21px;
+}
+
+#list-info {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+}
+
+#list-info .info{
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+    padding: 15px;
+}
+.info p {
+    margin-top: 30px;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.info h3 {
+    text-wrap-mode: nowrap;
+    font-size: 20px;
+}
+
+.info img {
+    height: 250px;
+}
+
+.section-footer button {
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--verde);
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.section-footer h1 {
+    max-width: 120vh;
+    font-size: 35px;
+}
+
+.section-footer {
+    text-align: center;
+}
+
+section#about {
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+section#partners {
+    justify-content: center;
+}
+
+#green-content {
+    background-color: var(--verde);
+    width: 100%;
+    height: 75vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#green-content p {
+    color: white;
+}
+
+#green-content h2 {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+#green-content .content {
+    /* width: 70vh; */
+    margin: 40px 0 40px 0;
+    line-height: 25px;
+}
+
+.about-xpress {
+    width: 70vh;
+}
+
+#partners-icons {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#need-help {
+    display: flex;
+    width: 130vh;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+#need-help-img{
+    width: 900px;
+}
+#need-help img {
+    width: 100%;
+}
+
+#need-help h1 {
+    font-size: 50px;
+}
+
+
+.slide-item-content p {
+    line-height: 20px;
+}
+
+#items-slide {
+    display: flex;
+    align-items: center; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+}
+
+
+.item-group {
+    flex: 1 1 270px;
+    max-width: 350px;
+
+    border: 1px solid var(--verde);
+    border-radius: 5px;
+    /* width: 280px; */
+    height: 450px;
+    padding: 15px;
+}
+
+.slide-item-content {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.slide-item-top h1 {
+    font-size: 20px;
+}
+
+.slide-item-content ul {
+    padding: 13px;
+    color: var(--paragrafo);
+    line-height: 25px;
+}
+
+.arrow {
+    height: 35px;
+    filter: invert(33%) sepia(45%) saturate(6983%) hue-rotate(136deg) brightness(96%) contrast(80%); /* realiza o filtro de cores no svg, com isso o svg fica com a cor correta */
+}
+.arrow:hover {
+    cursor: pointer;
+    filter: invert(59%) sepia(72%) saturate(414%) hue-rotate(89deg) brightness(91%) contrast(103%)
+}
+
+
+/* responsável em rodar as animações */
+.rotateAnim {
+    animation: rotation 5s linear infinite;
+}
+
+.movimentRotateAnim {
+    animation: rotateMoviment 2s ease-in-out infinite;
+}
+
+.bounceAnim {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+
+
+/* responsividade */
+ @media only screen and (max-width: 1300px) { 
+    #need-help {
+        flex-direction: column;
+        width: auto;
+    }
+    #need-help-img {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1128px) { 
+    #logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1288px) { 
+    .arrow{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #logo img {
+        display: block;
+        transform: none;
+    }
+    header nav {
+        display: none;
+    }
+    button#sign-in {
+        width: 190px;
+        margin: auto;
+    }
+    #tracker-search input, #tracker-search button {
+        width: 100%;
+    }
+    #need-help {
+        flex-direction: column;
+    }
+    .section-footer {
+        margin-top: 20px;
+    }
+    #list-info {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .info {
+        width: 100%; 
+        max-width: 400px; 
+    }
+    .about-xpress {
+        padding: 5px;
+    }
+    #woman-box-img {
+        display: none;
+    }
+    #items-slide {
+        display: flex;
+        width: auto;
+        gap: 20px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    section#about {
+        text-align: center;
+    }
+    .section-footer h1 {
+        width: 350px;
+        font-size: 20px;
+    }
+    div#home-tracker {
+        margin-top: 55px;
+        width: 370px;
+    }
+    #need-help {
+        display: flex;
+        width: auto;
+        align-items: center;
+        margin-top: 15px;
+    }
+    #need-help-img {
+        width: 300px;
+    }
+    #need-help h1 {
+        font-size: 20px;
+    }
+    .arrow {
+        display: none;
+    }
+    #green-content {
+        text-align: center;
+    }
+    .item-group {
+        width: 350px;
+    }
+}
+
+/* é uma animação simples de transição de cor*/
+
+@keyframes color-transition {
+    from {
+        color: var(--azul)
+        }
+    to {
+        color:  var(--verde)
+    }
+}
+
+
+/* o elemento é girado 360 graus */
+@keyframes rotation {
+    100% { 
+        transform:rotate(360deg); 
+    } 
+}
+
+/* é uma animação boba, faz uma leve rotação para esquerda e depois para direita */
+
+@keyframes rotateMoviment {
+    0% {
+        transform: rotateZ(0deg); 
+    }
+    25% {
+        transform: rotateZ(-5deg); 
+    }
+    50% {
+        transform: rotateZ(5deg); 
+    }
+    75% {
+        transform: rotateZ(-5deg); 
+    }
+    100% {
+        transform: rotateZ(0deg); 
+    }
+}
+
+/* o elemento vai para cima e para baixo levemente */
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-2.5px); 
+    }
+    50% {
+        transform: translateY(0); 
+    }
+    75% {
+        transform: translateY(-2.5px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
