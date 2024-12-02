@@ -1,0 +1,39 @@
+Teste Front-end Nível 2
+
+Esse teste tem o objetivo de testar suas habilidades em diferentes implementações do front-end
+
+ESTÃO PERMITIDAS CONSULTAS NO GOOGLE OU YOUTUBE, MAS O CHAT GPT ESTA COMPLETAMENTE PROIBIDO, SABEMOS QUE É POSSÍVEL QUE NÃO LEMBRE DE ALGO E PRECISE RELEMBRAR, MAS O CHAT-GPT ESTA PROIBIDO DEVIDO A SUA INCRÍVEL CAPACIDADE DE GERAR CODIGO FUNCIONAL. SE ESTIVER COM DUVIDA, PESQUISE, MAS NÃO UTILIZE INTELIGÊNCIA ARTIFICIAL, ASSIM, PODEREMOS AVALIA-LO DA MELHOR FORMA, E EVITAR TRANSTORNOS NO DECORRER DO PROCESSO SELETIVO, OBRIGADO.
+
+O seu objetivo é, de forma objetiva, fazer uma pagina em html, css e javascript, o mais idêntica o possível a pagina mostrada no modelo. Caso tenha conhecimento em Frameworks, poderá utilizar livremente, desde que efetue a configuração correta do seu ambiente de desenvolvimento. 
+
+O codigo deve ser bem comentado e segmentado, seguindo as boas praticas do desenvolvimento e tendo o HTML semantico para a otimização em motores de busca(SEO)
+
+Todos os arquivos de imagem estão disponíveis na pasta fornecida para a execução do desafio, a paleta de cores e a fonte utilizada estarão abaixo:
+
+A paleta de cores é:
+#111317;
+#1f2125;
+#35373b;
+#f9ac54;
+#d79447;
+#d1d5db;
+#ffffff;
+
+**Colocamos somente o hexadecimal das cores pois também se trata de uma parte do teste, queremos saber o seu nível de analise da pagina e comparação das cores utilizadas, todas as cores utilizadas na pagina estão acima.
+
+
+Fonte: https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap
+
+
+Os ícones do site devem ser retirados da plataforma https://icons8.com.br/icons, ou a que se sentir mais a vontade. A escolha dos ícones que combinam com o design da pagina fazem parte do desafio.
+
+Responsividade será um diferencial.
+
+
+**O teste foi pensado para abranger o nível de conhecimento de diversos candidatos, por isso mesmo liberamos as consultas. não queremos necessariamente que tenha decorado todas as etapas de desenvolvimento do front-end, mas sim que seja capaz de lidar com situações em que exigem pensamento analítico, resolução de problemas e cumprimento de prazos. 
+
+ Dito isto. Complemento que se você achou o teste fácil demais para você, poderá livremente adicionar quaisquer melhorias na pagina para demonstrar o seu conhecimento, lembre-se, estamos em um processo seletivo, e aquele que faz alem do esperado, se Destaca.
+
+Quaisquer duvidas, fale com o Guilherme.
+
+Boa sorte!

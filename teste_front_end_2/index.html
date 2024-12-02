@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <title>Document</title>
+  </head>
+
+  <!-- 
+Muitos componentes aqui são copias de outros componentes, 
+E também gostaria de ressaltar que não consegui fazer todos os hovers :( 
+-->
+
+  <body>
+    <header>
+      <div
+        style="
+          display: flex;
+          width: 120vh;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <div class="logo">
+          <img
+            style="width: 100%"
+            src="teste_front_end_2/teste_front_end_2/logo.png"
+            alt="FitClubLogo"
+          />
+        </div>
+
+        <div class="header-buttons">
+          <ul>
+            <li><a>Home</a></li>
+            <li><a>Program</a></li>
+            <li><a>Service</a></li>
+            <li><a>About</a></li>
+            <li><a>Community</a></li>
+          </ul>
+        </div>
+
+        <button class="button">Join Now</button>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section id="home">
+          <div class="orange-circle"></div>
+          <div id="home-apresentation">
+            <p style="font-weight: bold; font-size: 14px" class="orange-text">
+              BEST FITNESS IN THE TOWN
+            </p>
+            <h1><span class="text-stroke">MAKE</span> YOUR BODY SHAPE</h1>
+            <p class="description">
+              Unleash your potential and embark on a journey towards a stanger,
+              filter, and more cofident you. Sign Up for 'Make Your Body Shape'
+              now and witness the incredible transformation your body is capable
+              of!
+            </p>
+            <button
+              class="button"
+              style="margin-top: 30px; width: 140px; height: 50px"
+            >
+              Get Started
+            </button>
+          </div>
+          <div class="image-home">
+            <img
+              style="width: 100%; position: relative; z-index: 2"
+              src="teste_front_end_2/teste_front_end_2/header.png"
+              alt="home-man-strong"
+            />
+          </div>
+          <h1
+            style="
+              transform: translate(-340px, 88%);
+              left: 50%;
+              position: absolute;
+              font-size: 150px;
+              opacity: 0.03;
+              pointer-events: none;
+            "
+          >
+            FITNESS
+          </h1>
+          <div
+            class="orange-circle"
+            style="transform: translate(120vh, 10vh)"
+          ></div>
+        </section>
+
+        <section id="program">
+          <div
+            style="display: flex; justify-content: space-between; width: 100%"
+          >
+            <h1>EXPLORE OUR PROGRAM</h1>
+
+            <div class="arrows">
+              <img
+                class="pointer"
+                width="40"
+                height="40"
+                src="https://img.icons8.com/sf-black/64/left.png"
+                alt="left"
+                style="
+                  margin-right: 25px;
+                  border: 2px solid #000000;
+                  border-radius: 25px;
+                  filter: invert(100%) sepia(100%) saturate(2%)
+                    hue-rotate(260deg) brightness(105%) contrast(101%);
+                "
+              />
+
+              <img
+                class="pointer"
+                width="40"
+                height="40"
+                src="https://img.icons8.com/sf-black-filled/64/right.png"
+                alt="right"
+                style="
+                  border: 2px solid #000000;
+                  border-radius: 25px;
+                  filter: invert(100%) sepia(100%) saturate(2%)
+                    hue-rotate(260deg) brightness(105%) contrast(101%);
+                "
+              />
+            </div>
+          </div>
+          <div class="program-things">
+            <!-- item program -->
+            <div class="program-info-item">
+              <div class="icon-container">
+                <img
+                  src="https://img.icons8.com/ios-filled/50/boxing.png"
+                  alt="strength-icon"
+                />
+              </div>
+              <h1>Strength</h1>
+              <p>
+                Embrace the essence of strength as we delve into its various
+                dimensios physical, mental, and emotional.
+              </p>
+              <div class="join-now">
+                <a href="">Join Now</a>
+                <img
+                  src="https://img.icons8.com/ios-filled/50/right--v1.png"
+                  alt="arrow-right-join-now"
+                  style="padding: 6px; width: 28px; height: 28px"
+                />
+              </div>
+            </div>
+            <!-- item program -->
+            <div class="program-info-item">
+              <div class="icon-container">
+                <img
+                  src="https://img.icons8.com/ios-filled/50/heart-with-pulse--v1.png"
+                  alt="heart-with-pulse--v1"
+                />
+              </div>
+              <h1>Physical Fitness</h1>
+              <p>
+                It encompasses a range of activies that improve health,
+                strength, flexibility, and overall well-being.
+              </p>
+              <div class="join-now">
+                <a href="">Join Now</a>
+                <img
+                  src="https://img.icons8.com/ios-filled/50/right--v1.png"
+                  alt="arrow-right-join-now"
+                  style="padding: 6px; width: 28px; height: 28px"
+                />
+              </div>
+            </div>
+            <!-- item program -->
+            <div class="program-info-item">
+              <div class="icon-container">
+                <img
+                  src="https://img.icons8.com/ios-filled/50/running.png"
+                  alt="running"
+                />
+              </div>
+              <h1>Fat Lose</h1>
+              <p>
+                Through a combination of workout routines and expert guidance,
+                we'll empower you to reach your goals.
+              </p>
+              <div class="join-now">
+                <a href="">Join Now</a>
+                <img
+                  src="https://img.icons8.com/ios-filled/50/right--v1.png"
+                  alt="arrow-right-join-now"
+                  style="padding: 6px; width: 28px; height: 28px"
+                />
+              </div>
+            </div>
+            <!-- item program -->
+            <div class="program-info-item">
+              <div class="icon-container">
+                <img
+                  src="https://img.icons8.com/material/48/shopping-basket-2.png"
+                  alt="shopping-basket-2"
+                />
+              </div>
+              <h1>Weight Gain</h1>
+              <p>
+                Designed for individuals, our program offers an effective
+                approuach togaining weight ina a sustainable manner.
+              </p>
+              <div class="join-now">
+                <a href="">Join Now</a>
+                <img
+                  src="https://img.icons8.com/ios-filled/50/right--v1.png"
+                  alt="arrow-right-join-now"
+                  style="padding: 6px; width: 28px; height: 28px"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="service">
+          <div id="service-images">
+            <div id="man-redline">
+              <img
+                src="teste_front_end_2/teste_front_end_2/class-1.jpg"
+                alt="man-redline"
+              />
+            </div>
+            <div id="man-halter">
+              <img
+                src="teste_front_end_2/teste_front_end_2/class-2.jpg"
+                alt="man-halter"
+              />
+            </div>
+          </div>
+
+          <div
+            id="service-apresentation"
+            style="margin-top: -76px; margin-left: 25px"
+          >
+            <h1>THE CLASS YOU WILL GET HERE</h1>
+            <p class="description">
+              Led by our team of expert and motivational instructors, "The Class
+              You Will Get Here" is a high-energy, results-driven session that
+              combines a perfect blend of cardio, strength training, and
+              functional exercises. Ech class is carefully curated to keep you
+              engaged and challenged, ensuring you never hit a plateau in your
+              fitness endeavors.
+            </p>
+            <button class="button" style="width: 140px; margin-top: 50px">
+              Book A Class
+            </button>
+          </div>
+        </section>
+
+        <section id="about">
+          <div>
+            <div class="section-header-top">
+              <h1>WHY JOIN US?</h1>
+
+              <p>
+                Our diverse membership base create a friendly and supportive
+                atmosphere, where you can make friends and stay motivated.
+              </p>
+            </div>
+
+            <div>
+              <div id="image-join-club">
+                <img
+                  src="teste_front_end_2/teste_front_end_2/join.jpg"
+                  alt="join-gymclub-img"
+                />
+              </div>
+              <div id="join-us-container-bottom">
+                <!-- join us item group -->
+                <div class="join-us-items">
+                  <div class="icon-container">
+                    <img
+                      src="https://img.icons8.com/pastel-glyph/64/person-male--v3.png"
+                      alt="personal-icon"
+                    />
+                  </div>
+                  <div class="join-us-items-desc">
+                    <h3>Personal Trainer</h3>
+                    <p>
+                      Unlock your potential with your expert Personal Trainers.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- join us item group -->
+                <div class="join-us-items">
+                  <div class="icon-container">
+                    <img
+                      src="https://img.icons8.com/sf-regular-filled/48/integrated-webcam.png"
+                      alt="integrated-webcam"
+                    />
+                  </div>
+                  <div class="join-us-items-desc">
+                    <h3>Practive Sessions</h3>
+                    <p>Elevate your fitness with practive sessions.</p>
+                  </div>
+                </div>
+
+                <!-- join us item group -->
+                <div class="join-us-items">
+                  <div class="icon-container">
+                    <img
+                      src="https://img.icons8.com/material-sharp/48/admin-settings-male.png"
+                      alt="admin-settings-male"
+                    />
+                  </div>
+                  <div class="join-us-items-desc">
+                    <h3>Good Management</h3>
+                    <p>Supportive management, for your fitness success.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <div class="section-header-top">
+                <h1>OUR PRICING PLAN</h1>
+
+                <p>
+                  Our pricing plan comes with various membership tiers, each
+                  tailored to cater to different preferences and fitness
+                  aspirations
+                </p>
+              </div>
+            </div>
+            <div class="program-things">
+              <!-- price card -->
+              <div class="program-info-item price-card">
+                <div>
+                  <p>Basic Plan</p>
+                  <h1>$16</h1>
+                  <ul>
+                    <li>
+                      <img
+                        src="/teste_front_end_2/teste_front_end_2/tick-inside-circle.svg"
+                        alt="check-icon"
+                      />
+                      Smart workout plan
+                    </li>
+
+                    <li>
+                      <img
+                        src="/teste_front_end_2/teste_front_end_2/tick-inside-circle.svg"
+                        alt="check-icon"
+                      />
+                      At home workouts
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="price-join-now pointer">
+                  <a href="">Join Now</a>
+                </div>
+              </div>
+
+              <!-- price card -->
+              <div class="program-info-item price-card">
+                <div>
+                  <p>Weekly Plan</p>
+                  <h1>$25</h1>
+                  <ul>
+                    <li>
+                      <img
+                        src="/teste_front_end_2/teste_front_end_2/tick-inside-circle.svg"
+                        alt="check-icon"
+                      />
+                      PRO Gymps
+                    </li>
+                    <li>
+                      <img
+                        src="/teste_front_end_2/teste_front_end_2/tick-inside-circle.svg"
+                        alt="check-icon"
+                      />
+                      Smart workout plan
+                    </li>
+                    <li>
+                      <img
+                        src="/teste_front_end_2/teste_front_end_2/tick-inside-circle.svg"
+                        alt="check-icon"
+                      />
+                      At home workouts
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="price-join-now">
+                  <a href="">Join Now</a>
+                </div>
+              </div>
+
+              <!-- price card -->
+              <div class="program-info-item price-card">
+                <div>
+                  <p>Monthly Plan</p>
+                  <h1>$45</h1>
+                  <ul>
+                    <li>
+                      <img
+                        src="/teste_front_end_2/teste_front_end_2/tick-inside-circle.svg"
+                        alt="check-icon"
+                      />
+                      ELITE Gyms &amp; Classes
+                    </li>
+
+                    <li>
+                      <img
+                        src="/teste_front_end_2/teste_front_end_2/tick-inside-circle.svg"
+                        alt="check-icon"
+                      />
+                      PRO Gymps
+                    </li>
+                    <li>
+                      <img
+                        src="/teste_front_end_2/teste_front_end_2/tick-inside-circle.svg"
+                        alt="check-icon"
+                      />
+                      Smart workout plan
+                    </li>
+                    <li>
+                      <img
+                        src="/teste_front_end_2/teste_front_end_2/tick-inside-circle.svg"
+                        alt="check-icon"
+                      />
+                      At home workouts
+                    </li>
+                    <li>
+                      <img
+                        src="/teste_front_end_2/teste_front_end_2/tick-inside-circle.svg"
+                        alt="check-icon"
+                      />
+                      Personal Training
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="price-join-now">
+                  <a href="">Join Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="community">
+        <div id="container-review">
+          <div style="margin-top: 20px">
+            <img
+              src="https://img.icons8.com/fluency-systems-filled/96/quote-right.png"
+              class="filter"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <h1>MEMBER REVIEW</h1>
+            <p style="margin-top: 10px">
+              What a truly sets this gym apart is their expert team of trainers.
+              The trainers are knowledgeable, approachable, and genuinely
+              invested in helping members achieve their fitness goals. They take
+              the time to understand individual needs and create personalized
+              workout plans, ensuring maximum results and satety.
+            </p>
+
+            <div style="margin: 35px 0px 35px 0px" class="filter">
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material-rounded/24/star--v1.png"
+                alt="star--v1"
+              />
+
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material-rounded/24/star--v1.png"
+                alt="star--v1"
+              /><img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material-rounded/24/star--v1.png"
+                alt="star--v1"
+              /><img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material-rounded/24/star--v1.png"
+                alt="star--v1"
+              /><img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material/24/star-half-empty--v2.png"
+                alt="star-half-empty--v2"
+              />
+            </div>
+
+            <div style="display: flex">
+              <div class="profile-icon">
+                <img
+                  src="teste_front_end_2/teste_front_end_2/member.jpg"
+                  alt="member"
+                />
+              </div>
+              <div id="developer-information">
+                <h1>Jane Cooper</h1>
+                <p>Software Developer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter" style="position: relative">
+            <img
+              width="40"
+              class="pointer"
+              height="40"
+              src="https://img.icons8.com/sf-black/64/left.png"
+              alt="left"
+              style="bottom: 0; position: absolute"
+            />
+
+            <img
+              width="40"
+              class="pointer"
+              height="40"
+              src="https://img.icons8.com/sf-black-filled/64/right.png"
+              alt="right"
+              style="bottom: 0; position: absolute; margin-left: 50px"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div
+        class="orange-circle"
+        style="transform: translate(-50vh, -160px)"
+      ></div>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img
+            src="./teste_front_end_2/teste_front_end_2/logo.png"
+            alt="Logo"
+          />
+        </div>
+        <p>
+          Take the first step towards a healthier, stronger you with our
+          unbeatable pricing plans. Let's sweat, achieve, and conquer together!
+        </p>
+        <div class="footer-social-container">
+          <div class="filter pointer">
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/50/facebook-new.png"
+              alt="facebook"
+            />
+          </div>
+          <div class="filter pointer">
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/50/instagram-new--v1.png"
+              alt="instagram-new--v1"
+            />
+          </div>
+          <div class="filter pointer">
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/50/twitter.png"
+              alt="twitter"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-things">
+        <!-- list 1 -->
+        <div class="footer-thing">
+          <h3>Company</h3>
+          <ul>
+            <li><a>Business</a></li>
+            <li><a>Franchise</a></li>
+            <li><a>Partnership</a></li>
+            <li><a>Network</a></li>
+          </ul>
+        </div>
+
+        <!-- list 2 -->
+        <div class="footer-thing">
+          <h3>About Us</h3>
+          <ul>
+            <li><a>Blogs</a></li>
+            <li><a>Security</a></li>
+            <li><a>Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- list 3 -->
+        <div class="footer-thing">
+          <h3>Contact</h3>
+          <ul>
+            <li><a>Contact Us</a></li>
+            <li><a>Privacy Policy</a></li>
+            <li><a>Terms & Conditions</a></li>
+            <li><a>BMI Calculator</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

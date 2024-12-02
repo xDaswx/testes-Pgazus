@@ -1,0 +1,42 @@
+header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+header a {
+    position: relative
+}
+
+header a::after {
+    background-color: var(--orange);
+    height: 2px;
+    bottom: -10px;
+    width: 0%;
+    content: "";
+    transition: 0.5s;
+    left: 0;
+    position: absolute;
+}
+
+header a:hover:after {
+    width: 50%;
+}
+
+.logo {
+    width: 120px;
+}
